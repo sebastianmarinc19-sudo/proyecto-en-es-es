@@ -32,7 +32,7 @@ class EntrenadorModelos:
             'Regresión Logística': LogisticRegression(max_iter=1000, random_state=42),
             'Bosque Aleatorio': RandomForestClassifier(n_estimators=100, random_state=42),
             'SVM': SVC(kernel='rbf', random_state=42, probability=True),
-            'XGBoost': XGBClassifier(n_estimators=100, random_state=42, use_label_encoder=False),
+            'XGBoost': XGBClassifier(n_estimators=100, random_state=42),
             'Red Neuronal': MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=1000, random_state=42)
         }
         print(f"✓ {len(self.modelos)} modelos creados")

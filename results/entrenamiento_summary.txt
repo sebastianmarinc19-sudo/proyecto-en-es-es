@@ -3,8 +3,8 @@ RESUMEN DE ENTRENAMIENTO
 
 Modelo                    Train Acc    Test Acc     Tiempo (s)  
 -------------------------------------------------------------
-Bosque Aleatorio          1.0000       0.9267       22.83       
-Red Neuronal              1.0000       0.9477       12.76       
-Regresión Logística       0.9965       0.9545       20.88       
-SVM                       0.9867       0.9522       27.49       
-XGBoost                   1.0000       0.9382       28.95       
+Bosque Aleatorio          1.0000       0.9267       33.01       
+Red Neuronal              1.0000       0.9477       13.74       
+Regresión Logística       0.9965       0.9545       24.88       
+SVM                       0.9867       0.9522       35.55       
+XGBoost                   1.0000       0.9382       31.35       
