@@ -4,6 +4,3 @@
 # Cache de Python
 __pycache__/
 *.pyc
-
-# Dataset crudo (pesa ~270MB, se descarga de UCI - ver link en README.md)
-data/raw/
