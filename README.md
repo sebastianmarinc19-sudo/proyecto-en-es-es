@@ -39,7 +39,8 @@ proyecto en es es/
 │   ├── 00_inicio.py             # Verificación de instalación
 │   ├── 01_exploracion.py        # Análisis exploratorio (EDA) + limpieza
 │   ├── 02_entrenamiento.py      # Entrenar los 5 modelos
-│   └── 03_evaluacion.py         # Evaluar y comparar modelos
+│   ├── 03_evaluacion.py         # Evaluar y comparar modelos
+│   └── 04_prediccion.py         # Demo: predice actividades del conjunto de prueba
 ├── results/                     # Resultados (se generan al ejecutar)
 │   ├── modelos/                 # Los 5 modelos entrenados (.pkl)
 │   ├── graficos/                # Los 9 gráficos generados
@@ -77,6 +78,7 @@ python scripts/00_inicio.py
 python scripts/01_exploracion.py
 python scripts/02_entrenamiento.py
 python scripts/03_evaluacion.py
+python scripts/04_prediccion.py   # opcional: demo de predicción en vivo
 ```
 
 Los scripts calculan sus rutas a partir de su propia ubicación, así que funcionan
@@ -100,6 +102,18 @@ producir resultados silenciosamente incorrectos:
 - `01_exploracion.py` → verifica valores faltantes, duplicados, etiquetas y rango de valores
 - `02_entrenamiento.py` → 26 verificaciones (consistencia de datos, normalización, cada modelo guardado)
 - `03_evaluacion.py` → 15 verificaciones (métricas en rango válido, archivos generados)
+- `04_prediccion.py` → verifica que el modelo y normalizador existan y que las predicciones sean válidas
+
+## 🎬 Demo en vivo
+
+`scripts/04_prediccion.py` toma muestras del conjunto de prueba y predice su
+actividad con el mejor modelo entrenado, mostrando la confianza de cada predicción:
+
+```bash
+python scripts/04_prediccion.py           # 5 muestras al azar
+python scripts/04_prediccion.py 10        # 10 muestras al azar
+python scripts/04_prediccion.py --indice 2525   # una muestra específica y reproducible
+```
 
 Los resultados quedan registrados en `results/verificacion_*.txt`.
 

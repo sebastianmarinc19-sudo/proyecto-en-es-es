@@ -1,0 +1,13 @@
+DEMO DE PREDICCIÓN
+============================================================
+
+Modelo usado: Regresión Logística (Puntaje F1: 0.9544)
+
+#     Actividad Real    Predicción        Confianza   Acertó
+565   Caminando         Caminando          100.0%     Si
+1220  De Pie            De Pie             100.0%     Si
+1677  Subir Escaleras   Subir Escaleras    100.0%     Si
+1577  Acostado          Acostado           100.0%     Si
+2834  Acostado          Acostado           100.0%     Si
+
+Exactitud en esta demo: 5/5 (100.0%)
