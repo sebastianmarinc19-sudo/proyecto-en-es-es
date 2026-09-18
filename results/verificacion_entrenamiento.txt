@@ -1,0 +1,31 @@
+VERIFICACIÓN DEL ENTRENAMIENTO
+============================================================
+
+[OK] Train: mismo número de filas en datos y actividades
+[OK] Test: mismo número de filas en datos y actividades
+[OK] Train y test tienen el mismo número de características
+[OK] Las 6 actividades esperadas están presentes en train
+[OK] El dataset no tiene valores faltantes tras la limpieza
+[OK] La normalización no generó valores NaN (train)
+[OK] La normalización no generó valores NaN (test)
+[OK] Media de train normalizado es aproximadamente 0
+[OK] Desviación estándar de train normalizado es aproximadamente 1
+[OK] El normalizador se guardó en disco
+[OK] Regresión Logística: el archivo .pkl se guardó en disco
+[OK] Regresión Logística: predicciones dentro de las actividades válidas (1-6)
+[OK] Regresión Logística: exactitud de test dentro del rango [0, 1]
+[OK] Bosque Aleatorio: el archivo .pkl se guardó en disco
+[OK] Bosque Aleatorio: predicciones dentro de las actividades válidas (1-6)
+[OK] Bosque Aleatorio: exactitud de test dentro del rango [0, 1]
+[OK] SVM: el archivo .pkl se guardó en disco
+[OK] SVM: predicciones dentro de las actividades válidas (1-6)
+[OK] SVM: exactitud de test dentro del rango [0, 1]
+[OK] XGBoost: el archivo .pkl se guardó en disco
+[OK] XGBoost: predicciones dentro de las actividades válidas (1-6)
+[OK] XGBoost: exactitud de test dentro del rango [0, 1]
+[OK] Red Neuronal: el archivo .pkl se guardó en disco
+[OK] Red Neuronal: predicciones dentro de las actividades válidas (1-6)
+[OK] Red Neuronal: exactitud de test dentro del rango [0, 1]
+[OK] Se entrenaron y guardaron los 5 modelos esperados
+
+Total: 26/26 verificaciones pasaron.

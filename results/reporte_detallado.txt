@@ -1,0 +1,35 @@
+======================================================================
+REPORTE DE EVALUACIÓN - PROYECTO HAR
+======================================================================
+
+COMPARACIÓN DE MODELOS
+----------------------------------------------------------------------
+                     Accuracy  Precision    Recall  F1-Score
+Regresión Logística  0.954530   0.956338  0.954530  0.954439
+SVM                  0.952155   0.952594  0.952155  0.952068
+Red Neuronal         0.947743   0.949973  0.947743  0.947872
+XGBoost              0.938242   0.939658  0.938242  0.938000
+Bosque Aleatorio     0.926705   0.927771  0.926705  0.926584
+
+MEJOR MODELO
+----------------------------------------------------------------------
+Nombre: Regresión Logística
+F1-Score: 0.9544
+Accuracy: 0.9545
+Precision: 0.9563
+Recall: 0.9545
+
+CLASIFICACIÓN POR ACTIVIDAD (Mejor Modelo)
+----------------------------------------------------------------------
+                    precision    recall  f1-score   support
+
+           WALKING       0.94      0.99      0.97       496
+  WALKING_UPSTAIRS       0.96      0.95      0.95       471
+WALKING_DOWNSTAIRS       0.99      0.94      0.96       420
+           SITTING       0.97      0.87      0.92       491
+          STANDING       0.89      0.97      0.93       532
+            LAYING       1.00      0.99      1.00       537
+
+          accuracy                           0.95      2947
+         macro avg       0.96      0.95      0.95      2947
+      weighted avg       0.96      0.95      0.95      2947

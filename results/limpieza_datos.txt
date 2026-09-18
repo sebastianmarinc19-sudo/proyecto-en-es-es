@@ -1,0 +1,13 @@
+REPORTE DE LIMPIEZA Y VERIFICACIÓN DE DATOS
+============================================================
+
+Valores faltantes (train): 0
+Valores faltantes (test):  0
+Filas duplicadas (train):  0
+Filas duplicadas (test):   0
+Etiquetas válidas (train): Si
+Etiquetas válidas (test):  Si
+Rango de valores: [-1.0000, 1.0000]
+
+Conclusion: dataset limpio, sin valores faltantes ni duplicados.
+No se requirio imputacion ni eliminacion de filas.

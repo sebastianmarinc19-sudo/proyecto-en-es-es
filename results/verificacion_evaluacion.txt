@@ -1,0 +1,20 @@
+VERIFICACIÓN DE LA EVALUACIÓN
+============================================================
+
+[OK] Las 6 actividades esperadas están presentes en test
+[OK] El normalizador del entrenamiento existe en disco
+[OK] La normalización de test no generó valores NaN
+[OK] Se encontraron y cargaron los 5 modelos esperados
+[OK] Bosque Aleatorio: todas las métricas están dentro del rango [0, 1]
+[OK] Red Neuronal: todas las métricas están dentro del rango [0, 1]
+[OK] Regresión Logística: todas las métricas están dentro del rango [0, 1]
+[OK] SVM: todas las métricas están dentro del rango [0, 1]
+[OK] XGBoost: todas las métricas están dentro del rango [0, 1]
+[OK] El archivo 06_comparacion_modelos.png se generó correctamente
+[OK] El archivo 07_ranking_modelos.png se generó correctamente
+[OK] El archivo 08_confusion_matrices.png se generó correctamente
+[OK] El archivo 09_radar_mejor_modelo.png se generó correctamente
+[OK] El archivo metricas_modelos.csv se generó correctamente
+[OK] El archivo reporte_detallado.txt se generó correctamente
+
+Total: 15/15 verificaciones pasaron.

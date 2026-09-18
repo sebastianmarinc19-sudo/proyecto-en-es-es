@@ -1,0 +1,224 @@
+================================================================================
+                    📌 REFERENCIA RÁPIDA - PROYECTO HAR
+================================================================================
+
+🎯 OBJETIVO: Reconocimiento de Actividad Humana mediante Teléfonos Inteligentes
+
+================================================================================
+                           CONFIGURACIÓN INICIAL
+================================================================================
+
+1. CREAR AMBIENTE VIRTUAL (si no existe):
+   python -m venv .venv
+
+2. ACTIVAR AMBIENTE:
+   .venv\Scripts\Activate.ps1
+   (Debes ver (.venv) al inicio de la terminal)
+
+3. INSTALAR LIBRERÍAS:
+   pip install -r requirements.txt
+
+4. VERIFICAR TODO:
+   python scripts/00_inicio.py
+
+================================================================================
+                            SCRIPTS PRINCIPALES
+================================================================================
+
+00_inicio.py
+   ├─ Verifica que librerías estén instaladas
+   ├─ Comando: python scripts/00_inicio.py
+   └─ Salida: Lista de versiones ✓
+
+01_exploracion.py (PRÓXIMO PASO)
+   ├─ Análisis Exploratorio de Datos (EDA)
+   ├─ Comando: python scripts/01_exploracion.py
+   └─ Salida: Gráficos en results/graficos/
+
+02_entrenamiento.py
+   ├─ Preprocesa datos y entrena modelos
+   ├─ Comando: python scripts/02_entrenamiento.py
+   └─ Salida: Modelos en results/modelos/
+
+03_evaluacion.py
+   ├─ Evalúa todos los modelos
+   ├─ Comando: python scripts/03_evaluacion.py
+   └─ Salida: Métricas en results/metricas.csv
+
+================================================================================
+                         ESTRUCTURA DE CARPETAS
+================================================================================
+
+proyecto en es es/
+├── .venv/                    ← Ambiente virtual (crear)
+├── data/
+│   └── raw/                  ← Dataset aquí (descargar)
+├── src/                       ← Código reutilizable
+│   ├── __init__.py
+│   ├── datos.py               ← Carga y limpieza de datos
+│   ├── models.py              ← Entrenamiento de modelos
+│   └── evaluation.py          ← Métricas y gráficos
+├── scripts/                   ← Scripts principales
+│   ├── 00_inicio.py           ← Ejecutar primero
+│   ├── 01_exploracion.py      ← Ejecutar segundo
+│   ├── 02_entrenamiento.py    ← Ejecutar tercero
+│   └── 03_evaluacion.py       ← Ejecutar cuarto
+├── results/
+│   ├── modelos/               ← Modelos entrenados
+│   ├── graficos/              ← Gráficos generados
+│   └── normalizador.pkl       ← Escalado del entrenamiento
+├── requirements.txt           ← Librerías necesarias
+├── README.md                  ← Descripción
+├── COMIENZA_AQUI.md           ← Guía rápida ⭐
+├── SETUP_VSCODE.md            ← Setup VS Code
+├── PLAN_PROYECTO.md           ← Plan completo
+└── REFERENCIA_RAPIDA.txt      ← Este archivo
+
+================================================================================
+                         ATAJOS VS CODE ÚTILES
+================================================================================
+
+Ctrl+Ñ              → Abre/cierra terminal
+Ctrl+Shift+P        → Paleta de comandos
+Ctrl+F5             → Ejecuta script actual
+F5                  → Inicia debugging
+Ctrl+/              → Comenta/descomenta línea
+Ctrl+Shift+X        → Abre extensiones
+Ctrl+Space          → Autocompletado
+Alt+Up/Down         → Mover línea
+
+================================================================================
+                      MODELOS Y RESULTADOS OBTENIDOS
+================================================================================
+
+1. Regresión Logística   - 95.45%  ← MEJOR MODELO
+2. SVM                   - 95.22%
+3. Red Neuronal          - 94.77%
+4. XGBoost               - 93.82%
+5. Bosque Aleatorio      - 92.67%
+
+(Exactitud sobre el conjunto de prueba. Detalle en results/metricas_modelos.csv)
+
+================================================================================
+                          MÉTRICAS A REPORTAR
+================================================================================
+
+Para cada modelo:
+✓ Accuracy   - % general correcto
+✓ Precision  - Falsos positivos
+✓ Recall     - Falsos negativos
+✓ F1-Score   - Balance Precision-Recall
+✓ Confusion Matrix - Errores por clase
+✓ ROC-AUC    - Curva de rendimiento
+
+================================================================================
+                         REQUISITOS MÍNIMOS 50%
+================================================================================
+
+✓ Descripción del dataset
+✓ Análisis exploratorio (EDA)
+✓ Preprocesamiento explicado
+✓ Mínimo 3 modelos entrenados
+✓ Comparación de resultados
+✓ Gráficos principales
+✓ Conclusiones
+
+================================================================================
+                        SOLUCIONES RÁPIDAS
+================================================================================
+
+PROBLEMA: "python no encontrado"
+→ Reinstala Python, marca "Add Python to PATH"
+
+PROBLEMA: "ModuleNotFoundError"
+→ Activa ambiente: .venv\Scripts\Activate.ps1
+
+PROBLEMA: ".venv no se activa"
+→ Ejecuta: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+PROBLEMA: "pip no reconocido"
+→ Python no está en PATH, reinstala
+
+PROBLEMA: "No se genera gráficos"
+→ Verifica que plt.show() está en el script
+
+================================================================================
+                      TIMELINE RECOMENDADO
+================================================================================
+
+Semana 1-2  → Exploración (EDA)              (15-20% del proyecto)
+Semana 2-3  → Preparación de datos           (25-30% del proyecto)
+Semana 3-4  → Desarrollo de modelos          (45-50% del proyecto) ← 50% AQUÍ
+Semana 4-5  → Evaluación y presentación      (100% del proyecto)
+
+================================================================================
+                     DESCARGAR DATASET UCI
+================================================================================
+
+1. Ir a: https://archive.ics.uci.edu/
+2. Buscar: "Human Activity Recognition Using Smartphones"
+3. Click en "Download: Data Folder"
+4. Descargar ZIP
+5. Extraer en: data/raw/
+
+Esperado: archivos train/, test/, activity_labels.txt, features.txt
+
+================================================================================
+                        DOCUMENTACIÓN
+================================================================================
+
+📄 COMIENZA_AQUI.md      ← ¡LEER PRIMERO! (guía paso a paso)
+📄 README.md             ← Descripción del proyecto
+📄 PLAN_PROYECTO.md      ← Plan detallado de 5 fases
+📄 SETUP_VSCODE.md       ← Configuración de VS Code
+📄 requirements.txt      ← Lista de librerías
+📄 REFERENCIA_RAPIDA.txt ← Este archivo
+
+================================================================================
+                          COMANDOS RÁPIDOS
+================================================================================
+
+# Crear ambiente
+python -m venv .venv
+
+# Activar ambiente
+.venv\Scripts\Activate.ps1
+
+# Instalar librerías
+pip install -r requirements.txt
+
+# Verificar instalación
+python scripts/00_inicio.py
+
+# Ejecutar exploración
+python scripts/01_exploracion.py
+
+# Entrenar modelos
+python scripts/02_entrenamiento.py
+
+# Evaluar modelos
+python scripts/03_evaluacion.py
+
+# Ver ambiente activado
+pip list
+
+# Desactivar ambiente
+deactivate
+
+================================================================================
+                         ¡LISTO PARA COMENZAR!
+================================================================================
+
+1. Abre VS Code
+2. File → Open Folder → "proyecto en es es"
+3. Terminal (Ctrl+Ñ) → Crear ambiente → Instalar librerías
+4. Ejecuta: python scripts/00_inicio.py
+5. Lee: COMIENZA_AQUI.md
+6. ¡Comienza con 01_exploracion.py!
+
+¡Buena suerte! 🚀
+
+================================================================================
+Última actualización: 2026-09-18
+Versión: 1.0 - Proyecto Listo para Comenzar
+================================================================================
