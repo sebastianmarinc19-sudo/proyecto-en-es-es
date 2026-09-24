@@ -4,3 +4,21 @@
 # Cache de Python
 __pycache__/
 *.pyc
+
+# Configuración local de Claude Code (no es parte del proyecto)
+.claude/
+
+# Checkpoints que crea Jupyter/Colab al abrir el notebook
+.ipynb_checkpoints/
+
+# Configuración local de editores
+.vscode/
+*.code-workspace
+
+# Archivos basura que crean los sistemas operativos
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs sueltos
+*.log
